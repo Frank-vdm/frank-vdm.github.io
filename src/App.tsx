@@ -1,14 +1,15 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import { Button } from 'antd'
-import { Banner } from './components/Banner'
+// import './App.css'
+import './styles/app.scss'
+
+import { Banner } from './sections/Banner'
+import { Portfolio } from './sections/Portfolio'
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <Button type="primary">Button</Button>
+      <Portfolio />
     </div>
   )
 }

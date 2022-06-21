@@ -1,0 +1,99 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    // background-image: url("/assets/anthony-garand-5sT07dJl65s-unsplash.jpg");
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-position: center;
+    padding-top: 7em;
+    padding: 7em 7em 0em 7em;
+
+    .wrapper {
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        font-size: 14px;
+        color: $template-text-color-light;
+
+        &>.queue-anim-leaving {
+            position: relative !important;
+        }
+    }
+
+    .user {
+        font-size: 120px;
+        color: $template-text-color-light;
+    }
+
+    .h1 {
+        font-size: 2rem;
+        border: 5px;
+        border-color: #87bba2;
+    }
+
+    .h2 {
+        font-size: 2rem;
+    }
+
+
+
+    $n: 4;
+
+    .detail-item {
+        opacity: 0;
+        animation: fade-in 300ms ease forwards;
+        color: $template-text-color-light;
+        // line-height: 100%;
+        margin-top: 2vmin;
+
+        @for $x from 2 through $n {
+            &:nth-child(#{$x}) {
+                animation-delay: 200ms * ($x - 1);
+            }
+        }
+    }
+
+    .down-arrow {
+        bottom: 20px;
+        font-size: 24px;
+        position: absolute;
+        left: 50%;
+        margin-left: -12px;
+        color: $template-text-color-light;
+    }
+}
+
+
+
+.list {
+    margin: auto;
+    list-style: none;
+    background: #fff07c;
+    padding: 5vmin;
+    border-radius: 4px;
+    min-width: 20vmin;
+    text-align: center;
+}
+
+.reset {
+    background: #87bba2;
+    position: absolute;
+    top: 5vmin;
+    right: 5vmin;
+    padding: 1vmin 3vmin;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
