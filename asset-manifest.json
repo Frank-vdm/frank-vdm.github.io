@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e1b31302.css",
+    "main.js": "/static/js/main.db35b25e.js",
+    "static/js/787.f18ea8ae.chunk.js": "/static/js/787.f18ea8ae.chunk.js",
+    "static/media/anthony-garand-5sT07dJl65s-unsplash.jpg": "/static/media/anthony-garand-5sT07dJl65s-unsplash.f344236d18b021bb8af5.jpg",
+    "index.html": "/index.html",
+    "main.e1b31302.css.map": "/static/css/main.e1b31302.css.map",
+    "main.db35b25e.js.map": "/static/js/main.db35b25e.js.map",
+    "787.f18ea8ae.chunk.js.map": "/static/js/787.f18ea8ae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1b31302.css",
+    "static/js/main.db35b25e.js"
+  ]
+}
