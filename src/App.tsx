@@ -1,15 +1,14 @@
-import React from 'react'
-// import './App.css'
 import './styles/app.scss'
-
-import { Banner } from './sections/Banner'
-import { Portfolio } from './sections/Portfolio'
+import { Background } from './components'
+import { Layout } from './layout'
+import { Footer } from './sections/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <Banner />
-      <Portfolio />
+    <div className="app">
+      <Background />
+      <Layout />
+      <Footer />
     </div>
   )
 }

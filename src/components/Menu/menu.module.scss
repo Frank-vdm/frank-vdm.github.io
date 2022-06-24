@@ -1,0 +1,49 @@
+@import '../../styles/common.scss';
+
+.menu-container {
+    padding-top: 7em;
+    padding-left: 7em;
+    position: relative;
+    width: 300px !important;
+    z-index: 2;
+    height: 100vh;
+
+    .menu {
+        position: fixed;
+
+        .item {
+            border-width: 0;
+            font-size: 1.5rem;
+            padding: 3px 20px;
+            border-radius: 50px;
+            border-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: transparent;
+
+            color: $white-1;
+
+            &:hover {
+                color: silver;
+            }
+        }
+    }
+}
+
+.slider {
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: #000 $template-text-color-light;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    .bar {
+        width: 25%;
+        height: 5px;
+        background: $template-text-color;
+        border-radius: 5px;
+        transition: all 500ms ease-in-out;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+    }
+}

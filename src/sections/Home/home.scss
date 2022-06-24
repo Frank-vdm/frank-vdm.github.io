@@ -1,0 +1,58 @@
+.home-container {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+
+    .home-content {
+        display: flex;
+        flex-direction: row;
+        margin: 7em 7em 0 7em;
+        align-items: center;
+        justify-content: space-between;
+
+        .picture {
+            font-size: 120px;
+        }
+
+        .details {
+            display: inline-block;
+            max-width: 40%;
+
+            &>.queue-anim-leaving {
+                position: relative !important;
+            }
+
+            $n: 6;
+
+            .greeting {
+                font-size: 1.5rem;
+            }
+
+            .info {
+                font-size: 1.3rem;
+            }
+
+            .detail-item {
+                opacity: 0;
+                animation: fade-in 300ms ease forwards;
+                margin-top: 2vmin;
+
+                @for $x from 2 through $n {
+                    &:nth-child(#{$x}) {
+                        animation-delay: 200ms * ($x - 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

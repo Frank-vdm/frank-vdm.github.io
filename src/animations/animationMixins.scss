@@ -1,0 +1,16 @@
+@mixin animation ($animation_name, $duration, $animation_direction, $cycle_count, $animation_timing_function) {
+    animation: $animation_name $duration;
+    animation-direction: $animation_direction;
+    animation-timing-function: $animation_timing_function;
+    animation-iteration-count: $cycle_count;
+
+    -webkit-animation: $animation_name $duration;
+    -webkit-animation-direction: $animation_direction;
+    -webkit-animation-timing-function: $animation_timing_function;
+    -webkit-animation-iteration-count: $cycle_count;
+
+    -moz-animation: $animation_name $duration;
+    -moz-animation-direction: $animation_direction;
+    -moz-animation-timing-function: $animation_timing_function;
+    -moz-animation-iteration-count: $cycle_count;
+}

@@ -1,12 +1,13 @@
-.portfolio {
-    width: 100%;
+.portfolio-container {
     height: 100vh;
     position: relative;
     text-align: center;
-    // background-image: url("/assets/anthony-garand-5sT07dJl65s-unsplash.jpg");
-    // background-size: cover;
-    // background-attachment: fixed;
-    // background-position: center;
-    padding-top: 7em;
-    padding: 7em 7em 0em 7em;
+    color: $white-1;
+
+    .portfolio-content {
+        position: absolute;
+        top: 60px;
+        display: flex;
+    }
+
 }
