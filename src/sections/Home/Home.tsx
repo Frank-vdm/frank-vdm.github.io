@@ -1,14 +1,14 @@
 import { SectionProps } from '../SectionProps'
-import React from 'react'
-import { UserOutlined } from '@ant-design/icons'
 import { Bounce } from 'src/animations/Bounce'
 import { DownArrow, Bottom, Button } from 'src/components'
+import { Avatar } from 'src/components/Avatar/Avatar'
 
 export const Home = ({ id }: SectionProps) => {
   return (
     <div id={id} className="home-container">
       <div className="home-content">
-        <UserOutlined className="picture" />
+        {/* <UserOutlined className="picture" /> */}
+        <Avatar />
         <div className="details">
           <div className="detail-item greeting">Hi!</div>
           <div className="detail-item greeting">
