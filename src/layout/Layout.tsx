@@ -1,13 +1,14 @@
 import React from 'react'
 import { menuConfig } from '../navigation'
-import { Menu } from '../components'
+//Im leaving this here as it will probably be added
+// import { Menu } from '../components'
 
 export const Layout = () => {
-  const [selectedItem, setSelectedItem] = React.useState('home')
-  const menuItems = menuConfig.map(({ id, displayName }) => ({
-    id,
-    displayName,
-  }))
+  // const [selectedItem, setSelectedItem] = React.useState('home')
+  // const menuItems = menuConfig.map(({ id, displayName }) => ({
+  //   id,
+  //   displayName,
+  // }))
 
   return (
     <div className={'layout-container'}>
