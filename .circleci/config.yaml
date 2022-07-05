@@ -1,0 +1,34 @@
+version: 2.1
+orbs:
+  node: circleci/node@3.0.0
+
+jobs:
+  deploy:
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run:
+          name: 'deploy'
+          command: npm run deploy   
+  test:
+    steps:
+       - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run:
+          name: 'test'
+          command: npm run test
+
+workflows:
+  version: 2
+  run-tests:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master
