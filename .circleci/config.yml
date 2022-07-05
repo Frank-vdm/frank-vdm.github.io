@@ -15,7 +15,7 @@ jobs:
           command: npm run deploy   
   test:
     docker:
-      - image: circleci/node:16.3.0
+      - image: cimg/node
     steps:
       - checkout
       - run:
