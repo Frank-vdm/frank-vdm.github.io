@@ -1,0 +1,44 @@
+:root {
+  --primary-1: #ffffff;
+  --primary-2: #ececec;
+  --primary-3: #c6c6c6;
+
+  --primary-transparent-1: rgba(255, 255, 255, 0.9);
+  --primary-transparent-2: rgba(253, 253, 253, 0.9);
+  --primary-transparent-3: rgba(217, 217, 217, 0.4);
+
+  --secondary-1: #000000;
+  --secondary-2: #151515;
+  --secondary-3: #2a2a2a;
+
+  --secondary-transparent-1: rgba(0, 0, 0, 0.25);
+  --secondary-transparent-2: rgba(0, 0, 0, 0.02);
+
+  --red: #ff6b6c;
+
+  font-family: 'Montserrat', sans-serif;
+  color: #2a2a2a;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --primary-1: #131313;
+    --primary-2: #262626;
+    --primary-3: #393939;
+
+    --primary-transparent-1: rgba(19, 19, 19, 0.9);
+    --primary-transparent-2: rgba(2, 2, 2, 0.9);
+    --primary-transparent-3: rgba(38, 38, 38, 0.6);
+
+    --secondary-1: #ffffff;
+    --secondary-2: #eaeaea;
+    --secondary-3: #d5d5d5;
+
+    --secondary-transparent-1: rgba(255, 255, 255, 0.25);
+    --secondary-transparent-2: rgba(255, 255, 255, 0.98);
+
+    --red: #ff6b6c;
+    font-family: 'Montserrat', sans-serif;
+    color: #d5d5d5;
+  }
+} */

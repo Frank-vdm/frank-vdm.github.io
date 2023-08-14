@@ -1,0 +1,28 @@
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+
+header nav ul li {
+  display: inline-block;
+  border-right: 1px solid var(--primary-3);
+  margin: 12px 0;
+}
+
+header nav ul li a {
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+/* TODO: figure out hover state */
+header nav ul li a:hover {
+  color: var(--red);
+  background-color: var(--secondary-3);
+}
