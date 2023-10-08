@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-@import url('variables.css');
+@import url('helpers/variables.css');
+@import url('helpers/typing.css');
+
+@import url('sections/header.css');
+@import url('sections/profile.css');
+@import url('sections/footer.css');
+
+@import url('pages/intro.css');
+@import url('pages/about.css');
+
+/* @import url('variables.css');
 @import url('contact-me.css');
 @import url('cv.css');
 @import url('footer.css');
 @import url('header-menu.css');
 @import url('profile-section.css');
 @import url('footer.css');
-@import url('typing.css');
+@import url('typing.css'); */
 
 body {
   padding: 0;
@@ -39,37 +49,22 @@ body {
   }
 } */
 
-header {
-  top: 0px;
-  z-index: 5;
-  display: flex;
-  position: fixed;
-  width: 100vw;
-  background: var(---primary-transparent-1);
-  box-shadow: 0px 1px 1px 0px var(--secondary-transparent-1);
-  backdrop-filter: blur(50px);
-}
-
 main {
   height: 100vh;
   width: 100vw;
+  overflow-y: scroll;
+  /* overflow: hidden; */
+  /* overscroll-behavior: none; */
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* position: relative; */
-  /* left: 100px; */
-}
-
-.intro-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
+  height: 100vh;
+  background: var(--primary-transparent-1);
+  backdrop-filter: blur(7.5px);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
 a {
@@ -94,37 +89,4 @@ relative {
   background: var(--primary-1);
   box-shadow: 0px 2px 2px 0px var(--secondary-transparent-1);
   backdrop-filter: blur(7.5px);
-}
-
-.selected {
-  color: var(--secondary-3);
-  border-bottom: 2px solid var(--secondary-3);
-}
-
-.content-container {
-  /* margin: 60px 0 0 0; */
-  width: 100vw;
-  height: 100vh;
-  clip-path: polygon(0 50%, 31% 0, 100% 0, 100% 100%, 0 100%);
-  /* background: var(--primary-transparent-1); */
-  backdrop-filter: blur(7.5px);
-  /* box-shadow: 0px 4px 4px 0px var(--secondary-transparent-1); */
-}
-
-.content {
-  width: 100vw;
-  height: 100vh;
-  padding: 60px 0 0 0;
-  background: var(--primary-transparent-1);
-  box-shadow: 0px 4px 4px 0px var(--secondary-transparent-1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-}
-
-.content h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  color: var(--secondary-3);
 }

@@ -1,0 +1,20 @@
+.top-left-clip {
+  clip-path: polygon(0 36rem, 25rem 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.intro {
+  position: fixed;
+  padding-top: 6rem;
+  margin-left: 24rem;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.intro h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--secondary-3);
+}

@@ -1,26 +1,25 @@
-accent {
+.corner-accent {
   z-index: 0;
   position: fixed;
   top: 0px;
   left: 0px;
   width: 1100px;
   height: 700px;
-  clip-path: polygon(45% 0, 0 61%, 0 0);
+  clip-path: polygon(24rem 0, 0 35rem, 0 0);
   background: var(--primary-1);
-  backdrop-filter: blur(2px);
   box-shadow: 0px 4px 4px 0px var(--secondary-transparent-1);
 }
 
-profile {
+.profile-stack {
   position: fixed;
   left: 10px;
-  top: 70px;
+  top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-socials {
+.socials {
   margin-top: 25px;
   width: 100%;
   padding-left: 90px;
@@ -29,7 +28,7 @@ socials {
   gap: 12px;
 }
 
-socials img:hover {
+.socials img:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in;
 }
