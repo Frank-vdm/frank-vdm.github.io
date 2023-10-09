@@ -1,3 +1,4 @@
+import { CurriculumVitae } from '~/pages/cv'
 import { Home } from '~/pages/home'
 import { Skills } from '~/pages/skills'
 
@@ -36,7 +37,7 @@ export const routerConfig: RouterConfigItem[] = [
   {
     label: 'CV',
     path: '/cv',
-    element: <div>CV</div>,
+    element: <CurriculumVitae />,
     isMenuItem: false,
   },
   {

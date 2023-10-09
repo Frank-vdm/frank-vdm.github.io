@@ -51,9 +51,20 @@ const SocialLink = styled(Icon)`
     fill: ${(p) => p.theme.colors.light[3]};
     transform: scale(1.2);
   }
+
+  @media (prefers-color-scheme: light) {
+    fill: ${(p) => p.theme.colors.dark[9]};
+
+    &:hover {
+      fill: ${(p) => p.theme.colors.dark[3]};
+    }
+  }
 `
 const Copywrite = styled.p`
   margin-top: 16px;
   font-size: 14px;
   color: ${(p) => p.theme.colors.dark[9]};
+  @media (prefers-color-scheme: light) {
+    color: ${(p) => p.theme.colors.light[9]};
+  }
 `

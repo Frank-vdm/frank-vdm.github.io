@@ -36,4 +36,13 @@ const MenuItem = styled(Link)<MeuItemProps>`
   &:hover {
     background-color: ${(p) => p.theme.colors.dark[4]};
   }
+
+  @media (prefers-color-scheme: light) {
+    background-color: ${(p) =>
+      p.active ? p.theme.colors.light[1] : 'transparent'};
+
+    &:hover {
+      background-color: ${(p) => p.theme.colors.light[4]};
+    }
+  }
 `

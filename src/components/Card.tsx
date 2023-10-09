@@ -15,4 +15,9 @@ export const Card = styled.div<Props>`
   &:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
+
+  @media (prefers-color-scheme: light) {
+    background-color: ${(p) => p.theme.colors.light[0]};
+    color: ${(p) => p.theme.colors.dark[9]};
+  }
 `
