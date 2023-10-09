@@ -11,6 +11,10 @@ export const Card = styled.div<Props>`
   transition: box-shadow 0.2s ease-in-out;
   background-color: ${(p) => p.theme.colors.dark[3]};
   color: ${(p) => p.theme.colors.light[9]};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);

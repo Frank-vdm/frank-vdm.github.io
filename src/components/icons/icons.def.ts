@@ -14,21 +14,25 @@ export { default as threads } from './paths/threads.json'
 export { default as trophy } from './paths/trophy.json'
 
 //Skills languages
-export { default as csharp } from './paths/skills/csharp.json'
-export { default as java } from './paths/skills/java.json'
-export { default as nodejs } from './paths/skills/nodejs.json'
-export { default as reactjs } from './paths/skills/reactjs.json'
-export { default as redux } from './paths/skills/redux.json'
+export { default as csharp } from './paths/logos/csharp.full.json'
+export { default as java } from './paths/logos/java.full.json'
+export { default as css } from './paths/skills/css.json'
+export { default as html } from './paths/skills/html.json'
+export { default as swift } from './paths/skills/swift.json'
 export { default as typescript } from './paths/skills/typescript.json'
-// export { default as typescript } from './paths/typescript.json'
 
-// export { default as typescript } from './paths/typescript.json'
+//Skills frameworks
+export { default as automerge } from './paths/logos/automerge.json'
+export { default as nodejs } from './paths/logos/nodejs.json'
+export { default as react } from './paths/skills/react.json'
+export { default as redux } from './paths/skills/redux.json'
+
 //tools
+export { default as docker } from './paths/logos/docker.json'
+export { default as figma } from './paths/logos/figma.json'
+export { default as git } from './paths/logos/git.json'
+export { default as terraform } from './paths/logos/terraform.json'
 export { default as aws } from './paths/skills/aws.json'
-export { default as docker } from './paths/skills/docker.json'
-export { default as git } from './paths/skills/git.json'
+export { default as circleci } from './paths/skills/circleci.json'
 export { default as postgres } from './paths/skills/postgres.json'
 export { default as vscode } from './paths/skills/vscode.json'
-// export { default as typescript } from './paths/typescript.json'
-
-// export { default as typescript } from './paths/typescript.json'

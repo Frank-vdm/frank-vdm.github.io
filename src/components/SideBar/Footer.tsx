@@ -27,9 +27,9 @@ export const Footer: React.FC = () => {
         >
           <SocialLink name={'stackoverflow'} />
         </a> */}
-        {/* <a href="mailto:francois_vd@icloud.com" target="_blank">
+        <a href="mailto:francois_vd@icloud.com" target="_blank">
           <SocialLink name={'email'} />
-        </a> */}
+        </a>
       </SocialLinks>
       <Copywrite>
         &copy;{new Date().getFullYear()} Francois van der Merwe

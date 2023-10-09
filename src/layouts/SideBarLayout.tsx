@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import React from 'react'
+import { Footer } from '~/components/Footer'
 import { SideBar } from '~/components/SideBar'
 
 interface SideBarLayoutProps {
@@ -12,7 +13,10 @@ export const SideBarLayout: React.FC<SideBarLayoutProps> = ({ children }) => {
   return (
     <Container>
       <SideBar width={sbWidth} />
-      <Content>{children}</Content>
+      <Content>
+        {children}
+        <Footer />
+      </Content>
     </Container>
   )
 }

@@ -38,7 +38,7 @@ export const routerConfig: RouterConfigItem[] = [
     label: 'CV',
     path: '/cv',
     element: <CurriculumVitae />,
-    isMenuItem: false,
+    isMenuItem: true,
   },
   {
     label: 'Contact',

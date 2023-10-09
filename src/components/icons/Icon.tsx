@@ -16,7 +16,10 @@ export const Icon = forwardRef<SVGSVGElement, Props>(
     if (!IconNames.includes(name)) return null
     const icon = icons[name]
     const { paths, svg } = icon
+    // const sx = name === 'automerge_full' ? { fill: color, ...style } : style
+
     const sx = { fill: color, ...style }
+
     return (
       <svg ref={ref} {...svg} height={size} style={sx} {...rest}>
         <g>

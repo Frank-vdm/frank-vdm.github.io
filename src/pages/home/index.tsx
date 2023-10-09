@@ -12,8 +12,8 @@ import { SideBarLayout } from '~/layouts/SideBarLayout'
 export const Home: React.FC = () => {
   return (
     <SideBarLayout>
-      <Space />
       <ContentView>
+        <Space />
         <Title>Hi, I'm Francois van der Merwe</Title>
         <Subtitle>Senior Software Engineer</Subtitle>
         <Bio />

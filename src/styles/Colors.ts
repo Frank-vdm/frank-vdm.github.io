@@ -31,7 +31,7 @@ export const colors: ThemeColors = {
     '#feb2b2', // #FEB2B4
     '#fc8181', // #FC8184
     '#f56565', // #F56568
-    '#e53e3e', // #E53E41
+    '#F05138', // #E53E41
     '#c53030', // #C53034
     '#9b2c2c', // #9B2C2F
     '#742a2a', // #742A2B
@@ -78,9 +78,9 @@ export const colors: ThemeColors = {
     '#feebc8',
     '#fbd38d',
     '#f6ad55',
-    '#ed8936',
+    '#FF9900',
     '#dd6b20',
-    '#c05621',
+    '#c05621', //#F05138
     '#9c4221',
     '#7b341e',
     '#5D270F',
