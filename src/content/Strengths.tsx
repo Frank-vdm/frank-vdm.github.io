@@ -1,8 +1,8 @@
 import { useTheme } from '@emotion/react'
 import styled from '@emotion/styled'
 import { CSSProperties } from 'react'
-import { Heading } from '~/components/Typography/Heading'
 import { Icon } from '~/components/icons/Icon'
+import { Heading } from '~/components/Typography/Heading'
 
 type Props = {
   style?: CSSProperties

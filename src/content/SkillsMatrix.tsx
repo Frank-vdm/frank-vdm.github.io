@@ -1,92 +1,164 @@
-import { useTheme } from '@emotion/react'
 import { Card } from '~/components/Card'
 import { Divider } from '~/components/Divider'
 import { Grid } from '~/components/Grid'
+import { Logo } from '~/components/Logo'
 import { Heading } from '~/components/Typography/Heading'
-import { Icon } from '~/components/icons'
 
 export const SkillsMatrix = () => {
-  const theme = useTheme()
   return (
     <>
       <Heading>Languages</Heading>
-      <Grid columns={4} gutter={20}>
+      <Grid columns={5} gutter={20}>
         <Card>
-          <Icon name="typescript" size={150} color={theme.colors.blue[6]} />
+          <Logo name="CSharp" />
+        </Card>
+
+        <Card>
+          <Logo name="Elm" />
         </Card>
         <Card>
-          <Icon name="html" size={150} color={theme.colors.orange[6]} />
+          <Logo name="Java" />
         </Card>
         <Card>
-          <Icon name="css" size={150} color={theme.colors.blue[4]} />
+          <Logo name="Javascript" />
         </Card>
         <Card>
-          <Icon name="swift" size={150} color={theme.colors.red[5]} />
-        </Card>
-        {/* <Card>
-        <Icon name="elm" size={150} color={theme.colors.green[7]} />
-      </Card> */}
-        <Card>
-          <Icon name="csharp" size={150} color={theme.colors.purple[7]} />
+          <Logo name="Kotlin" />
         </Card>
         <Card>
-          <Icon name="java" size={150} color={theme.colors.red[6]} />
+          <Logo name="ObjectiveC" />
+        </Card>
+        <Card>
+          <Logo name="Python" />
+        </Card>
+        <Card>
+          <Logo name="Rust" />
+        </Card>
+        <Card>
+          <Logo name="Swift" />
+        </Card>
+        <Card>
+          <Logo name="Typescript" />
+        </Card>
+      </Grid>
+      <Divider color={'dark'} shade={7} style={{ margin: '20px 0' }} />
+      <Heading>Databases</Heading>
+      <Grid columns={5} gutter={20}>
+        <Card>
+          <Logo name="CosmosDb" />
+        </Card>
+        <Card>
+          <Logo name="MySql" />
+        </Card>
+        <Card>
+          <Logo name="Postgresql" />
+        </Card>
+        <Card>
+          <Logo name="Redis" />
+        </Card>
+        <Card>
+          <Logo name="Sqlite" />
+        </Card>
+        <Card>
+          <Logo name="SqlServer" />
         </Card>
       </Grid>
       <Divider color={'dark'} shade={7} style={{ margin: '20px 0' }} />
       <Heading>Frameworks</Heading>
-      <Grid columns={4} gutter={20}>
+      <Grid columns={5} gutter={20}>
         <Card>
-          <Icon name="nodejs" size={150} color={theme.colors.green[5]} />
+          <Logo name="Angular" />
         </Card>
         <Card>
-          <Icon name="react" size={150} color={theme.colors.blue[3]} />
+          <Logo name="Automerge" />
         </Card>
         <Card>
-          <Icon name="react" size={150} color={theme.colors.blue[3]} />
+          <Logo name="DotNet" />
         </Card>
         <Card>
-          <Icon name="redux" size={150} color={theme.colors.purple[6]} />
+          <Logo name="NextJS" />
         </Card>
         <Card>
-          <Icon name="automerge" size={150} color={theme.colors.yellow[3]} />
+          <Logo name="NodeJS" />
         </Card>
-        {/* <Card>
-        <Icon name="nextjs" size={150} />
-        </Card> */}
+        <Card>
+          <Logo name="React" />
+        </Card>
+        <Card>
+          <Logo name="ReactQuery" />
+        </Card>
+        <Card>
+          <Logo name="ReduxJS" />
+        </Card>
+        <Card>
+          <Logo name="Terraform" />
+        </Card>
+        <Card>
+          <Logo name="TRPC" />
+        </Card>
       </Grid>
       <Divider color={'dark'} shade={7} style={{ margin: '20px 0' }} />
       <Heading>Development Tools</Heading>
-      <Grid columns={4} gutter={20}>
+      <Grid columns={5} gutter={20}>
         <Card>
-          <Icon name="postgres" size={150} color={theme.colors.teal[5]} />
-        </Card>
-        {/* <Card>
-        <Icon name="mssql" size={150} />
-      </Card> */}
-        <Card>
-          <Icon name="aws" size={150} color={theme.colors.orange[4]} />
+          <Logo name="Aws" />
         </Card>
         <Card>
-          <Icon name="terraform" size={150} color={theme.colors.purple[7]} />
-        </Card>
-        {/* <Card>
-        <Icon name="azure" size={150} />
-      </Card> */}
-        {/* <Card>
-        <Icon name="xcode" size={150} />
-      </Card>*/}
-        <Card>
-          <Icon name="git" size={150} color={theme.colors.orange[5]} />
+          <Logo name="Azure" />
         </Card>
         <Card>
-          <Icon name="vscode" size={150} color={theme.colors.blue[5]} />
+          <Logo name="Bitbucket" />
         </Card>
         <Card>
-          <Icon name="docker" size={150} color={theme.colors.blue[6]} />
+          <Logo name="CircleCi" />
         </Card>
         <Card>
-          <Icon name="figma" size={150} color={theme.colors.blue[6]} />
+          <Logo name="Copilot" />
+        </Card>
+        <Card>
+          <Logo name="Datadog" />
+        </Card>
+        <Card>
+          <Logo name="Docker" />
+        </Card>
+        <Card>
+          <Logo name="Expo" />
+        </Card>
+        <Card>
+          <Logo name="Figma" />
+        </Card>
+        <Card>
+          <Logo name="Git" />
+        </Card>
+        <Card>
+          <Logo name="GithubActions" />
+        </Card>
+        <Card>
+          <Logo name="Jira" />
+        </Card>
+        <Card>
+          <Logo name="Jetbrains" />
+        </Card>
+        <Card>
+          <Logo name="Sentry" />
+        </Card>
+        <Card>
+          <Logo name="Serverless" />
+        </Card>
+        <Card>
+          <Logo name="TeamCity" />
+        </Card>
+        <Card>
+          <Logo name="VScode" />
+        </Card>
+        <Card>
+          <Logo name="Xamarin" />
+        </Card>
+        <Card>
+          <Logo name="Xcode" />
+        </Card>
+        <Card>
+          <Logo name="XD" />
         </Card>
       </Grid>
     </>

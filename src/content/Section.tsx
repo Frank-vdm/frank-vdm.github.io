@@ -1,61 +1,58 @@
 import styled from '@emotion/styled'
 import { ReactNode } from 'react'
 import { Divider } from '~/components/Divider'
+import { Group } from '~/components/Group'
+import { Stack } from '~/components/Stack'
+import { Swatch } from '~/components/Swatch'
 
 type Props = {
   title: string
   institution: string
   location?: string
+  startDate?: string
+  endDate?: string
   children?: ReactNode
 }
-export const Section = ({ title, institution, location, children }: Props) => {
+export const Section = ({
+  title,
+  institution,
+  location,
+  startDate,
+  endDate,
+  children,
+}: Props) => {
   return (
-    <Container>
-      <Stack style={{ marginRight: '2rem', alignItems: 'center' }}>
-        <Dot />
+    <Group>
+      <Stack style={{ width: 100 }}>
+        {startDate && endDate ? `${startDate} - ${endDate}` : null}
+      </Stack>
+      <Stack
+        style={{
+          width: 20,
+          marginRight: '1.5rem',
+          alignItems: 'center',
+        }}
+      >
+        <Swatch color="purple" shade={7} />
         <Divider
           orientation="vertical"
           color="purple"
-          shade={6}
+          shade={8}
           style={{ width: 2 }}
         />
       </Stack>
-      <Stack>
-        <HeaderRow>
+      <Stack style={{ flex: 1 }}>
+        <Group style={{ height: 20 }}>
           <Headline>{title}</Headline>
-          <Divider orientation="vertical" style={{ margin: '0 10px' }} />{' '}
+          <Divider orientation="vertical" style={{ margin: '0 10px' }} />
           <Institution>{institution}</Institution>
-        </HeaderRow>
+        </Group>
         {location}
         {children}
       </Stack>
-    </Container>
+    </Group>
   )
 }
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-`
-const Stack = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-const Dot = styled.div`
-  position: absolute;
-  display: flex;
-  width: 20px !important;
-  height: 20px !important;
-  border-radius: 50%;
-  background-color: ${(p) => p.theme.colors.purple[7]};
-`
-
-const HeaderRow = styled.div`
-  display: flex;
-  height: 20px;
-  overflow: hidden;
-  width: 100%;
-`
 
 const Headline = styled.strong`
   font-size: 1.2rem;

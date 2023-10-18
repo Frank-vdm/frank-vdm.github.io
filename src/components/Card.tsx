@@ -24,4 +24,5 @@ export const Card = styled.div<Props>`
     background-color: ${(p) => p.theme.colors.light[0]};
     color: ${(p) => p.theme.colors.dark[9]};
   }
+  tooltip: 'Card';
 `

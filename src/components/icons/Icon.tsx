@@ -1,5 +1,5 @@
 import React, { CSSProperties, SVGProps, forwardRef } from 'react'
-import * as icons from './icons.def'
+import * as icons from './icon.defs'
 
 type IconName = keyof typeof icons
 const IconNames: Array<IconName> = Object.keys(icons) as Array<IconName>
@@ -15,13 +15,12 @@ export const Icon = forwardRef<SVGSVGElement, Props>(
   ({ name, size = 25, color, style, ...rest }, ref) => {
     if (!IconNames.includes(name)) return null
     const icon = icons[name]
-    const { paths, svg } = icon
-    // const sx = name === 'automerge_full' ? { fill: color, ...style } : style
 
     const sx = { fill: color, ...style }
 
+    const { paths, svg } = icon
     return (
-      <svg ref={ref} {...svg} height={size} style={sx} {...rest}>
+      <svg ref={ref} height={size} style={sx} {...rest} {...svg}>
         <g>
           {paths.map((p, index) =>
             React.createElement(p.name, { key: index, ...p.attributes }),

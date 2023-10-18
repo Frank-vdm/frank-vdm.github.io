@@ -9,7 +9,7 @@ export const Skills = () => {
     <SideBarLayout>
       <ContentView>
         <Space />
-        <Subtitle>Skils</Subtitle>
+        <Subtitle>Skills</Subtitle>
         <SkillsMatrix />
       </ContentView>
     </SideBarLayout>
